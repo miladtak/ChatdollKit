@@ -1,1 +1,28 @@
+name: Build Xamarin.Android APK
 
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Setup MSBuild
+      uses: microsoft/setup-msbuild@v1.1
+
+    - name: Setup NuGet
+      uses: NuGet/setup-nuget@v1.0.5
+
+    - name: Restore NuGet packages
+      run: nuget restore ChatdollKit.sln
+
+    - name: Build project
+      run: msbuild ChatdollKit.sln /p:Configuration=Release
+
+    - name: Upload APK (اگر خروجی مشخص باشه)
+      run: echo "اینجا باید مسیر خروجی APK رو مشخص کنی"
