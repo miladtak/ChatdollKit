@@ -1,4 +1,5 @@
 ﻿# ChatdollKit
+ thanks 
 3D virtual assistant SDK that enables you to make your 3D model into a voice-enabled chatbot. [🇯🇵日本語のREADMEはこちら](https://github.com/uezo/ChatdollKit/blob/master/README.ja.md)
 
 - [🐈 Live demo](https://unagiken.blob.core.windows.net/chatdollkit/ChatdollKitDemoWebGL/index.html) A WebGL demo. Say "Hello" to start conversation. She’s multilingual, so you can ask her something like "Let's talk in Japanese" when you want to switch languages.
